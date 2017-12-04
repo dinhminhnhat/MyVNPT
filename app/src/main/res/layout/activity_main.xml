@@ -7,7 +7,28 @@
     android:orientation="vertical"
     tools:context="vn.com.vnpt.myvnpt.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textStyle="bold"
+            android:phoneNumber="true"
+            android:id="@+id/tvTim"
+            android:layout_width="269dp"
+            android:layout_height="match_parent"
+            android:hint="Nhập sđt"
+            android:layout_gravity="center"
+            android:gravity="center|left"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tìm" />
+    </LinearLayout>
     <ListView
+        android:id="@+id/lvDanhSack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></ListView>
 
