@@ -2,14 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="100sp"
     android:orientation="horizontal">
 
-    <android.support.v4.widget.CircleImageView
+    <ImageView
+        android:padding="5dp"
         android:id="@+id/imv_daidien"
-        android:layout_width="110sp"
-        android:layout_height="110sp"
-        android:src="@mipmap/ic_launcher" />
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,8 +19,10 @@
         <TextView
         android:id="@+id/tv_sosim"
         android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:hint="so sim"/>
+        android:layout_height="30sp"
+        android:hint="so sim"
+        android:gravity="center|left"
+            android:textSize="20dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,13 +39,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="40sp"
                     android:hint="thong tin nguoi dung"
+                    android:textSize="15dp"
                     />
 
                 <TextView
                     android:id="@+id/tv_giasim"
                     android:layout_width="match_parent"
                     android:layout_height="30sp"
-                    android:hint="gia sim" />
+                    android:hint="gia sim"
+                    android:gravity="center|left"
+                    android:textSize="13dp"
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -56,6 +64,8 @@
                     android:layout_height="40sp"
                     android:hint="trang thai sim"
                     android:layout_marginLeft="10sp"
+                    android:gravity="center|left"
+                    android:textSize="15dp"
                     />
 
                 <TextView
@@ -64,6 +74,8 @@
                     android:layout_height="30sp"
                     android:hint="loai sim"
                     android:layout_marginLeft="10sp"
+                    android:gravity="center|left"
+                    android:textSize="15dp"
                     />
             </LinearLayout>
         </LinearLayout>
