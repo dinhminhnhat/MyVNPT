@@ -19,10 +19,10 @@ ImageView avatar;
 ListView lvDanhSack;
 EditText editTim;
 Button btn_Tim;
-    public static int[] imgAvatar = {R.mipmap.gn,R.mipmap.birthday,R.mipmap.valentine};
+  //  public static int[] imgAvatar = {R.mipmap.gn,R.mipmap.birthday,R.mipmap.valentine};
     //Nội dung của từng Item trong ListView
-    public static String[] so = {"0909090990", "0123456789",
-            "Valentine"};
+    //public static String[] so = {"0909090990", "0123456789",
+      //      "Valentine"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +35,7 @@ Button btn_Tim;
         //Ở bước này mình đã làm tắt đi 1 bước, chính xác là
 //        //CustomAdapter adapter=new CustomAdapter(CustomListVIewActivity.this, tvNoiDung, imgAvatar);
 //        //lvCustomListView.setAdapter(adapter);
-        lvDanhSack.setAdapter(new customlistviewAdapter(MainActivity.this,so,imgAvatar));
+        //lvDanhSack.setAdapter(new customlistviewAdapter(MainActivity.this,so,imgAvatar));
     }
 
     public void Anhxa(){
